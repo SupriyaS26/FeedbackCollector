@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin View</title></head>
+<body>
+    <h2>All Feedback</h2>
+    <a href="/export">Download as CSV</a>
+    <ul>
+        {% for item in feedback %}
+        <li>{{ item[1] }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
